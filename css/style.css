@@ -264,7 +264,7 @@ a {
   font-weight: bold;
   margin: 5px 0 10px 0; }
 
-@media (max-width: 1920px) {
+@media (max-width: 1900px) {
   .block_controllers {
     position: relative;
     width: 100%;
@@ -311,8 +311,8 @@ a {
   .table_bottom_r {
     position: relative;
     background-color: #fff;
-    width: 30%; } }
-@media (max-width: 1400px) {
+    width: 27%; } }
+@media (max-width: 1370px) {
   .table_bottom {
     display: table;
     width: 100%; }
