@@ -109,17 +109,27 @@ a{color: #6488D5; text-decoration: none;
 .tit1{display: none;}
 	
 	.table_bottom_r {position: relative; background-color: #fff; width: 27%;}
-    
+	
     
     
 }
 
 
 
+@media (max-width: 1400px) {
+	
+	.table1 {
+    li{ padding: 5px 5px;}
+}
+
+	
+}
 
 
 
-@media (max-width: 1370px) {
+
+
+@media (max-width: 950px) {
 
 .table_bottom { display: table; width: 100%;
     ul{display: table-row}
