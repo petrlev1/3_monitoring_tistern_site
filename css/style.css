@@ -315,7 +315,7 @@ a {
 @media (max-width: 1400px) {
   .table1 li, .table2 li {
     padding: 5px 5px; } }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .table_bottom {
     display: table;
     width: 100%; }
