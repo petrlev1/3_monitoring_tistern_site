@@ -1,6 +1,6 @@
-body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; color: #000; }
+body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; color: #000; font-size: 14px; }
 
-a{color: #6488D5; text-decoration: none;
+a{color: #6488D5; text-decoration: none; border-style: none;
     &:hover {text-decoration: none;}}
 
 .all_table {display: table; width: 100%; max-width: 2000px; border-bottom:10px #d8def6 solid; padding-bottom: 15px;
@@ -12,15 +12,21 @@ a{color: #6488D5; text-decoration: none;
 .logo {padding: 3px; text-align: center;
     div{font-size: 12px; font-weight: bold; color: #6488D5; margin: 5px;}}
 
+h1 { font-size: 21px; }
+
+h2 { font-size: 17px; }
+
+.error { color: red;}
+
 .map { width: 100%; height: 435px; left: 0; top: 0; z-index: 0;}
 
-.head {position: absolute; width: 100%; top: 0; left: 0; background-color: #6488D5; text-align: right;}
+.head {width: 100%; top: 0; left: 0; background-color: #6488D5; text-align: right;}
 
 .head_menu { margin-right: 5px;
     a{display: inline-block; padding: 8px 8px; color:#fff; font-size: 11px;
 		&:hover{color: #FFF3B8;}}}
 
-.org_tree { position: relative; width: 300px;}
+.org_tree { position: relative; width: 320px;}
 
 .org_tree_tit {display: block; font-size: 14px; font-weight: bold; margin: 15px 0 8px 23px; text-decoration: none; color: #000; padding: 0 0 0 10px; background: url(img/tr1.svg) left no-repeat;
     &:hover{text-decoration: none;}}
@@ -28,15 +34,15 @@ a{color: #6488D5; text-decoration: none;
 
 
 .org_tree_block {display: table; width: 100%;  border-bottom:1px #d8def6 solid; padding-bottom: 10px;
-    ul{display:table-row; 
-        label { position: relative; width: 100%; padding: 3px 0; margin: 0 0 -5px 0;
+    ul{display:table-row;
+        label { position: relative; width: 100%; padding: 3px 0; margin: 0 0 -5px 0; padding-left: 22px;
             &:hover{background-color: #E6EBFF;}
 			&:hover span {border:1px #fff solid;}
             }
         .act_item {background-color: #E6EBFF;}
        }
     li{display:table-cell;}
-    .l1 {padding: 0 3px 0 22px;}
+    .l1 {padding: 0 3px 0 0;}
     .l2 {font-size: 11px; padding: 2px 3px 0 1px; color: #4D4D4D; font-weight: 100;}
     .l4 {font-size: 13px; color: #000; font-weight: bold; padding: 0 10px 0 4px;}
 }
@@ -52,11 +58,17 @@ a{color: #6488D5; text-decoration: none;
 .table1 {display: table; font-size: 12px; color: #000; width: 100%; border-left: 2px #fff solid; border-right: 2px #fff solid; border-collapse: collapse; line-height: 14px;
     ul{display: table-row;
         &:focus {font-weight: bold}
-        &:hover{background-color: #E6EBFF;}}
+        &:hover{background-color: #E6EBFF; color: #000}}
     li{display: table-cell; padding: 8px 10px; border:1px #d8def6 solid; vertical-align: middle;}
+	
+	.table1_title {color: #287AA7; font-size: 11px; font-weight: bold; background: linear-gradient(rgba(255,255,255,1), rgba(230,235,255,1));
+	&:hover{color:#287AA7}}
 }
 .table1_act {background-color: #E6EBFF; font-weight: bold;}
-.table1_title {color: #287AA7; font-size: 11px; font-weight: bold; background: linear-gradient(rgba(255,255,255,1), rgba(230,235,255,1))}
+
+
+.tcolor_dred { color: #fff; background-color: #d96262;}
+.tcolor_dyel {color: #fff; background-color: #aeaf2b}
 
 .bottom_cont {margin-top: -45px;}
 
@@ -90,6 +102,49 @@ a{color: #6488D5; text-decoration: none;
 
 
 
+/* hist */
+
+.margin1 {padding: 0 10px;}
+
+.links_group1 { border-bottom: 1px #d8def6 solid;
+	a{display: inline-block; font-size: 21px; padding: 8px 12px 8px 12px; margin: 0 5px -2px 5px; border: 1px  #d8def6 solid; border-bottom: 1px #fff solid; background-color: #fff; border-top-left-radius: 2px; border-top-right-radius: 2px;
+		&:hover {color: #fff; background-color: #6488D5;}}
+	.links_group1_act { color: #fff; background-color: #6488D5; }
+}
+
+.links_group2 { @extend .links_group1;
+	a{font-size: 12px; font-weight: bold;}}
+
+.table_hist {display: table; width: 100%; padding-bottom: 15px;
+    ul{display:table-row}
+    li{display:table-cell; vertical-align: top;}}
+
+.table_hist_l {border-right:1px #d8def6 solid; width:70%;}
+
+.table_hist_r {}
+
+.map2 { width: 100%; height: 350px;}
+
+.block1 { font-size: 13px;
+	h1 {font-size: 12px; font-weight: bold; color: #fff; padding: 8px; margin: 0; background-color: #6488D5}
+	p {margin: 5px 0;}
+}
+.block1_all { font-size: 11px; padding: 3px 8px; overflow: auto; background-color: #f8f8f8;}
+.block1_sobit {@extend .block1_all; height: 210px;}
+.block1_itogi {@extend .block1_all; height: 82px;}
+
+
+.table_cash { @extend .table1; position: relative;
+	.table1_title{width: 100%;}}
+
+
+
+/* /hist */
+
+
+
+
+
 @media (max-width: 1900px) {
     
     .block_controllers {position: relative; width: 100%; padding-left: 0; left: 0; top:5px;}
@@ -113,6 +168,11 @@ a{color: #6488D5; text-decoration: none;
     
     
 }
+
+
+
+
+
 
 
 
