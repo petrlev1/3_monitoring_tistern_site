@@ -76,11 +76,11 @@ h2 { font-size: 17px; }
     ul{display: table-row}
     li{display: table-cell; position: relative;}}
 
-.table_bottom_r {position: relative; background-color: #fff; width: 32%;}
+.table_bottom_r {position: relative; width: 32%;}
 
 .org_name {display: inline-block; font-size: 18px; border-top:1px #d8def6 solid; border-right:1px #d8def6 solid; padding: 8px 15px; background-color: #fff}
 
-.block_br {position: relative; background-color: #fff; padding: 12px 10px; border-top:1px #d8def6 solid; min-width: 230px; box-shadow: -5px -2px 10px #ccc; overflow: hidden;
+.block_br {position: relative; background-color: #fff; padding: 12px 10px; border-top:1px #d8def6 solid; min-width: 230px; box-shadow: -5px -2px 10px #ccc; overflow: hidden; margin-top: 42px;
     label{margin-right: 10px; color: #6488D5; border-bottom:1px #94B7FF dashed; font-size: 14px; font-weight: bold; margin-bottom: 5px; margin-right: 13px;}}
 
 .table2 {@extend .table1; border-left:1px #d8def6 solid; border-right:1px #d8def6 solid;
@@ -199,7 +199,7 @@ h2 { font-size: 17px; }
 
 .tit1{display: none;}
 	
-	.table_bottom_r {position: relative; background-color: #fff; width: 27%;}
+	.table_bottom_r {position: relative; width: 27%;}
 	
     
     
@@ -231,7 +231,7 @@ h2 { font-size: 17px; }
     ul{display: table-row}
     li{display: block;}}
 	
-.table_bottom_r {background-color: #fff; width: 100%;}
+.table_bottom_r {width: 100%;}
     
 .table1 {display: table;
     ul{display: table-row;}
@@ -247,7 +247,7 @@ h2 { font-size: 17px; }
     
     .tit1{display: block;}
 	
-	.block_br { box-shadow: 0 0 10px #ccc; }
+	.block_br { box-shadow: 0 0 10px #ccc; margin-top: 0 }
     
     
 }
