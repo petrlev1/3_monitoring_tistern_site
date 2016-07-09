@@ -15,8 +15,6 @@ a {
 .all_table {
   display: table;
   width: 100%;
-  max-width: 2000px;
-  border-bottom: 10px #d8def6 solid;
   padding-bottom: 15px; }
   .all_table ul {
     display: table-row; }
@@ -25,18 +23,22 @@ a {
     vertical-align: top; }
 
 .all_table_l {
-  position: relative;
-  border-right: 1px #d8def6 solid;
-  width: 1px; }
+  position: relative; }
 
 .all_table_r {
   position: relative;
-  width: 100%;
-  border-right: 1px #d8def6 solid; }
+  width: 100%; }
+
+.logo_search {
+  position: relative;
+  background: linear-gradient(to top, #F5F6F7, #fff);
+  border-bottom: 1px #d8def6 solid;
+  z-index: 1; }
 
 .logo {
   padding: 3px;
-  text-align: center; }
+  text-align: center;
+  width: 350px; }
   .logo div {
     font-size: 12px;
     font-weight: bold;
@@ -53,18 +55,21 @@ h2 {
   color: red; }
 
 .map {
+  position: fixed;
   width: 100%;
-  height: 435px;
-  left: 0;
+  left: 350px;
   top: 0;
+  bottom: 0;
   z-index: 0; }
 
 .head {
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
   background-color: #6488D5;
-  text-align: right; }
+  text-align: right;
+  z-index: 1; }
 
 .head_menu {
   margin-right: 5px; }
@@ -77,8 +82,15 @@ h2 {
       color: #FFF3B8; }
 
 .org_tree {
-  position: relative;
-  width: 320px; }
+  position: fixed;
+  top: 135px;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 350px;
+  overflow: auto;
+  background-color: #fff;
+  z-index: 0; }
 
 .org_tree_tit {
   display: block;
@@ -157,15 +169,48 @@ h2 {
 .icons img {
   height: 20px; }
 
+.tcolor_dred {
+  color: #fff;
+  background-color: #d96262; }
+
+.tcolor_dyel {
+  color: #fff;
+  background-color: #aeaf2b; }
+
+.table_bottom {
+  display: table;
+  width: 100%; }
+  .table_bottom ul {
+    display: table-row; }
+  .table_bottom li {
+    display: table-cell;
+    position: relative; }
+
+.table_bottom_r {
+  position: relative;
+  width: 32%; }
+
+.table1_cont {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 350px;
+  max-height: 40%;
+  overflow: auto;
+  box-shadow: 0 0 10px #ccc;
+  margin-bottom: 10px; }
+
 .table1, .table2, .table_cash {
   display: table;
   font-size: 12px;
-  color: #000;
   width: 100%;
+  color: #000;
   border-left: 2px #fff solid;
   border-right: 2px #fff solid;
   border-collapse: collapse;
-  line-height: 14px; }
+  line-height: 14px;
+  background-color: #fff;
+  overflow: auto; }
   .table1 ul, .table2 ul, .table_cash ul {
     display: table-row; }
     .table1 ul:focus, .table2 ul:focus, .table_cash ul:focus {
@@ -190,52 +235,33 @@ h2 {
   background-color: #E6EBFF;
   font-weight: bold; }
 
-.tcolor_dred {
-  color: #fff;
-  background-color: #d96262; }
-
-.tcolor_dyel {
-  color: #fff;
-  background-color: #aeaf2b; }
-
-.bottom_cont {
-  margin-top: -45px; }
-
-.table_bottom {
-  display: table;
-  width: 100%; }
-  .table_bottom ul {
-    display: table-row; }
-  .table_bottom li {
-    display: table-cell;
-    position: relative; }
-
-.table_bottom_r {
-  position: relative;
-  width: 32%; }
-
 .org_name {
+  position: fixed;
+  top: 37px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   border-top: 1px #d8def6 solid;
   border-right: 1px #d8def6 solid;
-  padding: 8px 15px;
-  background-color: #fff; }
+  margin-left: 5px;
+  padding: 7px 15px;
+  background-color: #fff;
+  box-shadow: 4px 3px 10px #ccc; }
 
 .block_br {
-  position: relative;
+  position: fixed;
+  max-width: 500px;
+  top: 37px;
+  right: 5px;
   background-color: #fff;
   padding: 12px 10px;
   border-top: 1px #d8def6 solid;
-  min-width: 230px;
-  box-shadow: -5px -2px 10px #ccc;
-  overflow: hidden;
-  margin-top: 42px; }
+  box-shadow: 0 0 10px #ccc;
+  overflow: hidden; }
   .block_br label {
     margin-right: 10px;
     color: #6488D5;
     border-bottom: 1px #94B7FF dashed;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     margin-bottom: 5px;
     margin-right: 13px; }
@@ -442,6 +468,9 @@ h2 {
 
 /* /hist */
 @media (max-width: 1900px) {
+  .block_br {
+    max-width: 260px; }
+
   .block_controllers {
     position: relative;
     width: 100%;
@@ -503,6 +532,14 @@ h2 {
   .table_bottom_r {
     width: 100%; }
 
+  .bottom_cont {
+    position: relative;
+    margin-top: 350px; }
+
+  .table1_cont {
+    position: relative;
+    left: 0; }
+
   .table1, .table2, .table_cash {
     display: table; }
     .table1 ul, .table2 ul, .table_cash ul {
@@ -541,7 +578,11 @@ h2 {
     display: block; }
 
   .block_br {
+    position: relative;
     box-shadow: 0 0 10px #ccc;
-    margin-top: 0; } }
+    top: 0;
+    margin-top: 0;
+    max-width: 100%;
+    right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
