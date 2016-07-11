@@ -41,7 +41,7 @@ a {
 .logo {
   padding: 3px;
   text-align: center;
-  width: 350px; }
+  width: 100%; }
   .logo div {
     font-size: 12px;
     font-weight: bold;
@@ -532,10 +532,16 @@ h2 {
 
   .tit1 {
     display: none; } }
-@media (max-width: 1400px) {
-  .table1 li, .table2 li, .table_cash li {
-    padding: 5px 5px; } }
-@media (max-width: 1200px) {
+@media (max-width: 1170px) {
+  .map {
+    left: 340px; }
+
+  .org_tree {
+    width: 340px; }
+
+  .logo_search {
+    width: 340px; }
+
   .tit1 {
     display: block; }
 
@@ -547,11 +553,24 @@ h2 {
     max-width: 100%;
     overflow: auto; }
 
+  .org_name {
+    left: 340px; }
+
   .table1_cont {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    left: 340px; }
 
   .table1 li, .table2 li, .table_cash li {
     font-size: 11px;
     padding: 2px 2px; } }
+@media (max-width: 970px) {
+  .block_br {
+    left: 340px;
+    width: auto; }
+
+  .table1_cont {
+    margin-bottom: 0;
+    left: 340px;
+    background-color: aqua; } }
 
 /*# sourceMappingURL=style.css.map */

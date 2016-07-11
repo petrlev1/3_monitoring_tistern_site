@@ -11,7 +11,7 @@ a{color: #6488D5; text-decoration: none; border-style: none;
 
 .logo_search {position: fixed; width: 350px; height: 134px; text-align: center; background: linear-gradient(to top, #F5F6F7, #fff); border-bottom: 1px #d8def6 solid; z-index: 2;}
 
-.logo {padding: 3px; text-align: center; width: 350px;
+.logo {padding: 3px; text-align: center; width: 100%;
     div{font-size: 12px; font-weight: bold; color: #6488D5; margin: 5px;}}
 
 .input-group { position: relative; left: 0; right: 0; margin: auto; width: 300px;}
@@ -217,34 +217,35 @@ h2 { font-size: 17px; }
 
 
 
-
-
-
-
-@media (max-width: 1400px) {
+@media (max-width: 1170px) {
 	
-	.table1 {
-    li{ padding: 5px 5px;}
-}
-
+	.map { left: 340px; }
 	
-}
-
-
-
-
-
-@media (max-width: 1200px) {
+	.org_tree { width:340px; }
+	
+	.logo_search { width: 340px; }
     
     .tit1{display: block;}
 	
 	.block_br { right: 0; top: 22%; bottom: 41%; width: 35%; max-width: 100%; overflow: auto}
 	
-	.table1_cont { margin-bottom: 0;}
+	.org_name { left: 340px; }
+	
+	.table1_cont { margin-bottom: 0; left: 340px}
     
 	.table1 {
 		li{ font-size: 11px; padding: 2px 2px}
 	}
     
+}
+
+
+
+
+@media (max-width: 970px) {
+	
+	.block_br {left: 340px; width: auto; }
+	.table1_cont { margin-bottom: 0; left: 340px; background-color: aqua;}
+	
 }
 
