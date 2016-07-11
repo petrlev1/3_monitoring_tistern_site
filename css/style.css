@@ -312,6 +312,14 @@ h2 {
   margin: 5px 0 10px 0; }
 
 /* hist */
+.hist_cont {
+  position: fixed;
+  top: 20px;
+  bottom: 0;
+  left: 350px;
+  right: 0;
+  overflow: auto; }
+
 .margin1 {
   padding: 0 10px; }
 

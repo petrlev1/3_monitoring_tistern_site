@@ -107,6 +107,8 @@ h2 { font-size: 17px; }
 
 /* hist */
 
+.hist_cont { position: fixed; top: 20px; bottom: 0; left: 350px; right: 0; overflow: auto; }
+
 .margin1 {padding: 0 10px;}
 
 .links_group1 { border-bottom: 1px #d8def6 solid;
