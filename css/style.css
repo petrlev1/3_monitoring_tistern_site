@@ -30,10 +30,13 @@ a {
   width: 100%; }
 
 .logo_search {
-  position: relative;
+  position: fixed;
+  width: 350px;
+  height: 134px;
+  text-align: center;
   background: linear-gradient(to top, #F5F6F7, #fff);
   border-bottom: 1px #d8def6 solid;
-  z-index: 1; }
+  z-index: 2; }
 
 .logo {
   padding: 3px;
@@ -44,6 +47,13 @@ a {
     font-weight: bold;
     color: #6488D5;
     margin: 5px; }
+
+.input-group {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 300px; }
 
 h1 {
   font-size: 21px; }
@@ -192,49 +202,13 @@ h2 {
 
 .table1_cont {
   position: fixed;
-  right: 0;
   bottom: 0;
-  height: 40%;
+  right: 0;
+  left: 350px;
+  max-height: 40%;
   overflow: auto;
   box-shadow: 0 0 10px #ccc;
   margin-bottom: 5px; }
-
-.table_ind, .table_ind_tit {
-  display: table;
-  width: 100%;
-  font-size: 12px;
-  color: #000;
-  border-collapse: collapse;
-  line-height: 14px;
-  background-color: #fff;
-  overflow: auto;
-  z-index: 1; }
-  .table_ind ul, .table_ind_tit ul {
-    display: table-row; }
-    .table_ind ul:focus, .table_ind_tit ul:focus {
-      font-weight: bold; }
-    .table_ind ul:hover, .table_ind_tit ul:hover {
-      background-color: #E6EBFF;
-      color: #000; }
-  .table_ind li, .table_ind_tit li {
-    display: table-cell;
-    width: 10%;
-    padding: 8px 10px;
-    border: 1px #d8def6 solid;
-    vertical-align: middle; }
-  .table_ind .table_ind_li1, .table_ind_tit .table_ind_li1 {
-    width: 5%; }
-  .table_ind .table_ind_li2, .table_ind_tit .table_ind_li2 {
-    width: 25%; }
-
-.table_ind_tit ul {
-  color: #287AA7;
-  font-size: 11px;
-  font-weight: bold;
-  background: linear-gradient(white, #e6ebff);
-  z-index: 99; }
-  .table_ind_tit ul:hover {
-    color: #287AA7; }
 
 .table1, .table2, .table_cash {
   display: table;
@@ -260,8 +234,6 @@ h2 {
     border: 1px #d8def6 solid;
     vertical-align: middle; }
   .table1 .table1_title, .table2 .table1_title, .table_cash .table1_title {
-    left: 350px;
-    right: 0;
     color: #287AA7;
     font-size: 11px;
     font-weight: bold;
@@ -277,6 +249,7 @@ h2 {
   position: fixed;
   top: 37px;
   display: inline-block;
+  left: 360px;
   font-size: 16px;
   border-top: 1px #d8def6 solid;
   border-right: 1px #d8def6 solid;
@@ -558,77 +531,27 @@ h2 {
     border-style: none; }
 
   .tit1 {
-    display: none; }
-
-  .table_bottom_r {
-    position: relative;
-    width: 27%; } }
+    display: none; } }
 @media (max-width: 1400px) {
   .table1 li, .table2 li, .table_cash li {
     padding: 5px 5px; } }
 @media (max-width: 1200px) {
-  .table_bottom {
-    display: table;
-    width: 100%; }
-    .table_bottom ul {
-      display: table-row; }
-    .table_bottom li {
-      display: block; }
-
-  .table_bottom_r {
-    width: 100%; }
-
-  .bottom_cont {
-    position: relative;
-    margin-top: 350px; }
-
-  .table1_cont {
-    position: relative;
-    left: 0; }
-
-  .table1, .table2, .table_cash {
-    display: table; }
-    .table1 ul, .table2 ul, .table_cash ul {
-      display: table-row; }
-    .table1 li, .table2 li, .table_cash li {
-      display: table-cell; }
-
-  .block_tisterna {
-    position: relative;
-    margin-right: 20px;
-    top: 0;
-    width: 45%;
-    float: right;
-    margin-top: 0; }
-
-  .block_controllers {
-    position: relative;
-    left: 0;
-    top: 0;
-    left: 0;
-    width: 45%; }
-
-  .link1but1[type="radio"]:checked ~ .block_controllers {
-    display: block; }
-
-  .link1but2[type="radio"]:checked ~ .block_tisterna {
-    display: block; }
-
-  .link1but1_id {
-    display: none; }
-
-  .link1but2_id {
-    display: none; }
-
   .tit1 {
     display: block; }
 
   .block_br {
-    position: relative;
-    box-shadow: 0 0 10px #ccc;
-    top: 0;
-    margin-top: 0;
+    right: 0;
+    top: 22%;
+    bottom: 41%;
+    width: 35%;
     max-width: 100%;
-    right: 0; } }
+    overflow: auto; }
+
+  .table1_cont {
+    margin-bottom: 0; }
+
+  .table1 li, .table2 li, .table_cash li {
+    font-size: 11px;
+    padding: 2px 2px; } }
 
 /*# sourceMappingURL=style.css.map */
