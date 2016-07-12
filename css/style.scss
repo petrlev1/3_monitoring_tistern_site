@@ -3,7 +3,7 @@ body {margin: 0 0; padding: 0 0; font-family:Verdana, Geneva, sans-serif; color:
 a{color: #6488D5; text-decoration: none; border-style: none;
     &:hover {text-decoration: none;}}
 
-.all_table {display: table; width: 100%; padding-bottom: 15px;
+.all_table {display: table; position: relative; width: 100%;
     ul{display:table-row}
     li{display:table-cell; vertical-align: top; }}
 .all_table_l { position: relative; }
@@ -62,12 +62,6 @@ h2 { font-size: 17px; }
 
 .tcolor_dred { color: #fff; background-color: #d96262;}
 .tcolor_dyel {color: #fff; background-color: #aeaf2b}
-
-.table_bottom { display: table; width: 100%;
-    ul{display: table-row}
-    li{display: table-cell; position: relative;}}
-
-.table_bottom_r {position: relative; width: 32%;}
 
 
 .table1_cont {position: fixed; bottom: 0; right: 0; left: 350px; max-height: 40%; overflow: auto; box-shadow: 0 0 10px #ccc; margin-bottom: 5px;}

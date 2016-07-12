@@ -14,8 +14,8 @@ a {
 
 .all_table {
   display: table;
-  width: 100%;
-  padding-bottom: 15px; }
+  position: relative;
+  width: 100%; }
   .all_table ul {
     display: table-row; }
   .all_table li {
@@ -186,19 +186,6 @@ h2 {
 .tcolor_dyel {
   color: #fff;
   background-color: #aeaf2b; }
-
-.table_bottom {
-  display: table;
-  width: 100%; }
-  .table_bottom ul {
-    display: table-row; }
-  .table_bottom li {
-    display: table-cell;
-    position: relative; }
-
-.table_bottom_r {
-  position: relative;
-  width: 32%; }
 
 .table1_cont {
   position: fixed;
