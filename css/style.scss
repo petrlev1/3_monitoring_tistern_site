@@ -74,10 +74,13 @@ h2 { font-size: 17px; }
     ul{display: table-row;
         &:focus {font-weight: bold}
         &:hover{background-color: #E6EBFF; color: #000}}
-    li{display: table-cell; padding: 8px 10px; border:1px #d8def6 solid; vertical-align: middle;}
+    li{display: table-cell; position: relative; padding: 8px 10px; border:1px #d8def6 solid; vertical-align: middle;}
 	
 	.table1_title {color: #287AA7; font-size: 11px; font-weight: bold; background: linear-gradient(rgba(255,255,255,1), rgba(230,235,255,1));
 	&:hover{color:#287AA7}}
+	
+	.item_del { display: block; position: absolute; width: 16px; height: 16px; left: 0; right: 0; top: 0; bottom: 0; margin: auto; color: #D5422F; padding: 1px 0; font-weight: bold; font-size: 17px; border-radius: 3px; text-align: center;
+	&:hover{color: #fff; background-color: #D5422F;}}
 }
 .table1_act {background-color: #E6EBFF; font-weight: bold;}
 
@@ -238,6 +241,7 @@ h2 { font-size: 17px; }
 	.head {opacity: 0.9;}
 	
     .hist_cont { top: 15%;}
+	
 }
 
 

@@ -229,6 +229,7 @@ h2 {
       color: #000; }
   .table1 li, .table2 li, .table_cash li {
     display: table-cell;
+    position: relative;
     padding: 8px 10px;
     border: 1px #d8def6 solid;
     vertical-align: middle; }
@@ -239,6 +240,25 @@ h2 {
     background: linear-gradient(white, #e6ebff); }
     .table1 .table1_title:hover, .table2 .table1_title:hover, .table_cash .table1_title:hover {
       color: #287AA7; }
+  .table1 .item_del, .table2 .item_del, .table_cash .item_del {
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #D5422F;
+    padding: 1px 0;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 3px;
+    text-align: center; }
+    .table1 .item_del:hover, .table2 .item_del:hover, .table_cash .item_del:hover {
+      color: #fff;
+      background-color: #D5422F; }
 
 .table1_act {
   background-color: #E6EBFF;
