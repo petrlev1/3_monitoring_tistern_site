@@ -73,23 +73,35 @@ h2 {
   z-index: 0; }
 
 .head {
-  position: relative;
-  width: 100%;
+  position: fixed;
   top: 0;
-  left: 0;
-  background-color: #6488D5;
-  text-align: right;
-  z-index: 1; }
+  right: 0;
+  z-index: 2;
+  opacity: 0.7; }
+  .head:hover {
+    opacity: 1; }
 
 .head_menu {
-  margin-right: 5px; }
+  max-height: 45px;
+  border: 3px #6488D5 solid;
+  text-align: left;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.97); }
   .head_menu a {
-    display: inline-block;
-    padding: 8px 8px;
-    color: #fff;
-    font-size: 11px; }
+    display: block;
+    padding: 13px 40px 13px 10px;
+    color: #000;
+    font-size: 11px;
+    font-weight: bold; }
     .head_menu a:hover {
-      color: #FFF3B8; }
+      color: #fff;
+      background-color: #6488D5; }
+  .head_menu:hover {
+    max-height: 1000px;
+    transition: max-height 1s ease-out; }
+  .head_menu .act {
+    color: #fff;
+    background: #6488d5 url(img/menu_arrow2.svg) right 5px center no-repeat; }
 
 .org_tree {
   position: fixed;
@@ -234,27 +246,27 @@ h2 {
 
 .org_name {
   position: fixed;
-  top: 37px;
+  top: 5px;
   display: inline-block;
-  left: 360px;
-  font-size: 16px;
-  border-top: 1px #d8def6 solid;
+  left: 351px;
+  font-size: 18px;
   border-right: 1px #d8def6 solid;
   margin-left: 5px;
   padding: 7px 15px;
   background-color: #fff;
-  box-shadow: 4px 3px 10px #ccc; }
+  box-shadow: 2px 2px 2px #ccc; }
 
 .block_br {
   position: fixed;
-  max-width: 500px;
-  top: 37px;
+  width: 22%;
+  top: 12%;
   right: 5px;
   background-color: #fff;
   padding: 12px 10px;
   border-top: 1px #d8def6 solid;
   box-shadow: 0 0 10px #ccc;
-  overflow: hidden; }
+  max-height: 400px;
+  overflow: auto; }
   .block_br label {
     margin-right: 10px;
     color: #6488D5;
@@ -312,11 +324,12 @@ h2 {
 /* hist */
 .hist_cont {
   position: fixed;
-  top: 30px;
+  top: 45px;
   bottom: 0;
   left: 350px;
   right: 0;
-  overflow: auto; }
+  overflow: auto;
+  padding-top: 20px; }
 
 .margin1 {
   padding: 0 10px; }
@@ -475,7 +488,8 @@ h2 {
 /* /hist */
 @media (max-width: 1900px) {
   .block_br {
-    max-width: 260px; }
+    max-width: 25%;
+    max-height: 350px; }
 
   .block_controllers {
     position: relative;
@@ -536,12 +550,13 @@ h2 {
     right: 0;
     top: 22%;
     bottom: 41%;
-    width: 35%;
+    width: 30%;
     max-width: 100%;
     overflow: auto; }
 
   .org_name {
-    left: 340px; }
+    left: 340px;
+    right: 30%; }
 
   .table1_cont {
     margin-bottom: 0;
@@ -549,7 +564,13 @@ h2 {
 
   .table1 li, .table2 li, .table_cash li {
     font-size: 11px;
-    padding: 2px 2px; } }
+    padding: 2px 2px; }
+
+  .head {
+    opacity: 0.9; }
+
+  .hist_cont {
+    top: 15%; } }
 @media (max-width: 970px) {
   .block_br {
     left: 340px;
@@ -557,7 +578,20 @@ h2 {
 
   .table1_cont {
     margin-bottom: 0;
-    left: 340px;
-    background-color: aqua; } }
+    left: 340px; } }
+@media (max-width: 750px) {
+  .table1_cont {
+    max-height: 50%; }
+
+  .block_br {
+    bottom: 51%; }
+
+  .org_name {
+    top: 50px;
+    left: 336px;
+    right: auto; }
+
+  .hist_cont {
+    top: 25%; } }
 
 /*# sourceMappingURL=style.css.map */
