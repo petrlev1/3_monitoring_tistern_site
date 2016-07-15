@@ -31,7 +31,8 @@ a {
 
 .logo_search {
   position: fixed;
-  width: 350px;
+  width: 22%;
+  min-width: auto;
   height: 128px;
   text-align: center;
   background: linear-gradient(to top, #F5F6F7, #fff);
@@ -67,7 +68,7 @@ h2 {
 .map {
   position: fixed;
   width: 100%;
-  left: 350px;
+  left: 22%;
   top: 0;
   bottom: 0;
   z-index: 0; }
@@ -109,7 +110,8 @@ h2 {
   left: 0;
   bottom: 0;
   display: block;
-  width: 350px;
+  width: 22%;
+  min-width: auto;
   overflow: auto;
   background-color: #fff;
   z-index: 0; }
@@ -132,7 +134,7 @@ h2 {
 .exp_all_cont {
   position: fixed;
   top: 124px;
-  width: 350px;
+  width: 22%;
   height: 29px;
   padding: 5px 5px 5px 15px;
   background-color: #fff;
@@ -249,7 +251,7 @@ h2 {
   position: fixed;
   bottom: 0;
   right: 0;
-  left: 350px;
+  left: 22%;
   max-height: 40%;
   overflow: auto;
   box-shadow: 0 0 10px #ccc;
@@ -314,7 +316,7 @@ h2 {
   position: fixed;
   top: 5px;
   display: inline-block;
-  left: 351px;
+  left: 22%;
   font-size: 18px;
   border-right: 1px #d8def6 solid;
   margin-left: 5px;
@@ -392,7 +394,7 @@ h2 {
   position: fixed;
   top: 45px;
   bottom: 0;
-  left: 350px;
+  left: 22%;
   right: 0;
   overflow: auto;
   padding-top: 20px; }
@@ -551,6 +553,9 @@ h2 {
   .table_cash .table1_title {
     width: 100%; }
 
+.input-group {
+  width: 90%; }
+
 /* /hist */
 @media (max-width: 1900px) {
   .block_br {
@@ -599,19 +604,28 @@ h2 {
 
   .tit1 {
     display: none; } }
-@media (max-width: 1170px) {
-  .map {
-    left: 340px; }
-
-  .exp_all_cont {
-    width: 340px; }
-
-  .org_tree {
-    width: 340px; }
+@media (max-width: 1700px) {
+  .table1_cont {
+    left: 28%; }
 
   .logo_search {
-    width: 340px; }
+    width: 28%; }
 
+  .map {
+    left: 28%; }
+
+  .org_tree {
+    width: 28%; }
+
+  .exp_all_cont {
+    width: 28%; }
+
+  .org_name {
+    left: 28%; }
+
+  .hist_cont {
+    left: 28%; } }
+@media (max-width: 1170px) {
   .tit1 {
     display: block; }
 
@@ -624,12 +638,10 @@ h2 {
     overflow: auto; }
 
   .org_name {
-    left: 340px;
     right: 30%; }
 
   .table1_cont {
-    margin-bottom: 0;
-    left: 340px; }
+    margin-bottom: 0; }
 
   .table1 li, .table2 li, .table_cash li {
     font-size: 11px;
@@ -642,12 +654,11 @@ h2 {
     top: 15%; } }
 @media (max-width: 970px) {
   .block_br {
-    left: 340px;
+    left: 28%;
     width: auto; }
 
   .table1_cont {
-    margin-bottom: 0;
-    left: 340px; } }
+    margin-bottom: 0; } }
 @media (max-width: 750px) {
   .table1_cont {
     max-height: 50%; }
@@ -657,7 +668,7 @@ h2 {
 
   .org_name {
     top: 50px;
-    left: 336px;
+    left: 28%;
     right: auto; }
 
   .hist_cont {
