@@ -178,19 +178,21 @@ h2 {
   .org_tree_block ul {
     display: table-row; }
     .org_tree_block ul label {
+      display: table-cell;
       position: relative;
       width: 100%;
       padding: 3px 0;
       margin: 0 0 -5px 0;
       padding-left: 22px; }
-      .org_tree_block ul label:hover {
-        background-color: #E6EBFF; }
-      .org_tree_block ul label:hover span {
-        border: 1px #fff solid; }
     .org_tree_block ul .act_item {
       background-color: #E6EBFF; }
+    .org_tree_block ul:hover {
+      background-color: #E6EBFF; }
+    .org_tree_block ul:hover span {
+      border: 1px #fff solid; }
   .org_tree_block li {
-    display: table-cell; }
+    display: table-cell;
+    vertical-align: middle; }
   .org_tree_block .l1 {
     padding: 0 3px 0 0; }
   .org_tree_block .l2 {
@@ -204,33 +206,36 @@ h2 {
     font-weight: bold;
     padding: 0 10px 0 4px; }
 
-.icons span {
-  position: relative;
-  padding: 1px 0 3px 0;
-  margin: 0 1px 0 0;
-  border: 1px #E6EBFF solid;
-  border-radius: 2px; }
-  .icons span p {
-    position: absolute;
-    display: none;
-    bottom: 14px;
-    z-index: 1;
-    font-size: 11px;
-    color: #000;
-    background-color: #fff;
-    font-weight: 100;
-    width: 150px;
-    padding: 2px 3px;
-    left: -45px;
-    box-shadow: 1px 1px 10px #ccc;
-    border: 1px #6488D5 solid; }
-  .icons span:hover p {
-    display: block; }
-  .icons span:hover {
-    background-color: #fff;
-    border: 1px #fff solid; }
-.icons img {
-  height: 20px; }
+.icons {
+  display: table;
+  border-collapse: collapse; }
+  .icons span {
+    display: table-cell;
+    position: relative;
+    border: 1px #E6EBFF solid; }
+    .icons span p {
+      position: absolute;
+      display: none;
+      bottom: 14px;
+      z-index: 1;
+      font-size: 11px;
+      color: #000;
+      background-color: #fff;
+      font-weight: 100;
+      width: 150px;
+      padding: 2px 3px;
+      left: -45px;
+      box-shadow: 1px 1px 10px #ccc;
+      border: 1px #6488D5 solid; }
+    .icons span:hover p {
+      display: block; }
+    .icons span:hover {
+      background-color: #fff;
+      border: 1px #fff solid; }
+  .icons img {
+    height: 22px;
+    width: auto;
+    padding: 1px; }
 
 .tcolor_dred {
   color: #fff;

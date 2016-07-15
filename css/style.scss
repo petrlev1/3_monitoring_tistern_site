@@ -55,24 +55,23 @@ h2 { font-size: 17px; }
 
 .org_tree_block {display: table; width: 100%;  border-bottom:1px #d8def6 solid; padding-bottom: 10px;
     ul{display:table-row;
-        label { position: relative; width: 100%; padding: 3px 0; margin: 0 0 -5px 0; padding-left: 22px;
-            &:hover{background-color: #E6EBFF;}
-			&:hover span {border:1px #fff solid;}
-            }
+        label { display: table-cell; position: relative; width: 100%; padding: 3px 0; margin: 0 0 -5px 0; padding-left: 22px;}
         .act_item {background-color: #E6EBFF;}
+		&:hover{background-color: #E6EBFF;}
+		&:hover span{border:1px #fff solid;}
        }
-    li{display:table-cell;}
+    li{display:table-cell; vertical-align: middle}
     .l1 {padding: 0 3px 0 0;}
     .l2 {font-size: 11px; padding: 2px 3px 0 1px; color: #4D4D4D; font-weight: 100;}
     .l4 {font-size: 13px; color: #000; font-weight: bold; padding: 0 10px 0 4px;}
 }
 
-.icons {
-	span{ position: relative; padding: 1px 0 3px 0; margin: 0 1px 0 0; border:1px #E6EBFF solid; border-radius: 2px;
+.icons { display: table; border-collapse: collapse;
+	span{ display: table-cell; position: relative; border:1px #E6EBFF solid;
 		p{ position: absolute; display: none; bottom: 14px; z-index: 1; font-size: 11px; color: #000; background-color: #fff; font-weight: 100; width: 150px; padding: 2px 3px; left: -45px; box-shadow: 1px 1px 10px #ccc; border: 1px #6488D5 solid;}
 		&:hover p{display: block;}
 	    &:hover {background-color: #fff; border:1px #fff solid;}}
-	img {height: 20px;}
+	img {height: 22px; width: auto; padding: 1px;}
 }
 
 
