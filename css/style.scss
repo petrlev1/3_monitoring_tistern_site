@@ -1,9 +1,11 @@
 $left_width: 28%;
 $left_width_big: 22%;
+$left_width_small: 33%;
 $left_width_min: auto;
 
 $right_width: 72%;
 $right_width_big: 75%;
+$right_width_small: 67%;
 
 body {margin: 0 0; padding: 0 0; font-family: Verdana, Geneva, sans-serif; color: #000; font-size: 14px; }
 
@@ -41,13 +43,13 @@ h2 { font-size: 17px; }
 	.act{color: #fff; background: rgb(100, 136, 213) url(img/menu_arrow2.svg) right 5px center no-repeat}
 }
 
-.org_tree { position: fixed; top: 152px; left: 0; bottom: 0; display: block; width: $left_width_big; min-width: $left_width_min; overflow: auto; background-color: #fff; z-index: 0}
+.org_tree { position: fixed; top: 153px; left: 0; bottom: 0; display: block; width: $left_width_big; min-width: $left_width_min; overflow: auto; background-color: #fff; z-index: 1}
 
 .org_tree_tit {display: block; font-size: 14px; font-weight: bold; margin: 15px 0 8px 23px; text-decoration: none; color: #000; padding: 0 0 0 10px; background: url(img/tr1.svg) left no-repeat;
     &:hover{text-decoration: none;}}
 .act {background: url(img/tr2.svg) left no-repeat}
 
-.exp_all_cont { position: fixed; top: 124px; width: $left_width_big; height: 29px; padding: 5px 5px 5px 15px; background-color: #fff; border-bottom: 1px #d8def6 solid; z-index: 1;}
+.exp_all_cont { position: fixed; top: 124px; width: $left_width_big; min-width: $left_width_min; height: 29px; padding: 5px 5px 5px 15px; background-color: #fff; border-bottom: 1px #d8def6 solid; z-index: 1;}
 
 .exp_all {position: absolute; left: 20px; top: 8px; font-size: 10px; color: #6488D5;  cursor: pointer;
 	span{position: absolute; display:block; width: 16px; height: 16px; border: 2px #E6EBFF solid;
@@ -102,7 +104,7 @@ h2 { font-size: 17px; }
 }
 .table1_act {background-color: #E6EBFF; font-weight: bold;}
 
-.org_name {position: fixed; top: 5px; display: inline-block; left: $left_width_big; font-size: 18px; border-right:1px #d8def6 solid; margin-left: 5px; padding: 7px 15px; background-color: #fff; box-shadow: 2px 2px 2px #ccc;}
+.org_name {position: fixed; top: 5px; display: inline-block; left: $left_width_big; font-size: 18px; border-right:1px #d8def6 solid; margin-left: 5px; padding: 7px 15px; background-color: #fff; box-shadow: 2px 2px 2px #ccc; z-index: 1}
 
 .block_br {position: fixed; width: 22%; top: 12%; right: 5px; background-color: #fff; padding: 12px 10px; border-top:1px #d8def6 solid; box-shadow: 0 0 10px #ccc; max-height: 400px; overflow: auto;
     label{margin-right: 10px; color: #6488D5; border-bottom:1px #94B7FF dashed; font-size: 13px; font-weight: bold; margin-bottom: 5px; margin-right: 13px;}}
@@ -128,9 +130,13 @@ h2 { font-size: 17px; }
 
 /* hist */
 
-.hist_cont { position: fixed; top: 45px; bottom: 0; left: $left_width_big; right: 0; overflow: auto; padding-top: 20px; }
+.hist_cont {position: fixed; top: 45px; bottom: 0; left: $left_width_big; right: 0; overflow: auto; padding-top: 20px; }
 
-.margin1 {padding: 0 10px;}
+.hist_bottom {position: fixed; bottom: 0; right: 0; left: $left_width_big; max-height: 40%; overflow: auto;}
+
+.graphhist { overflow: auto; background-color: #fff;}
+
+.margin1 {position: relative; padding: 0 10px; z-index: 1}
 
 .links_group1 { border-bottom: 1px #d8def6 solid;
 	label {display: inline-block; font-size: 21px; padding: 8px 12px 8px 12px; margin: 0 5px -2px 5px; border: 1px  #d8def6 solid; border-bottom: 1px #fff solid; border-top-left-radius: 2px; border-top-right-radius: 2px; color: #6488D5;
@@ -142,7 +148,7 @@ h2 { font-size: 17px; }
 .links_group2 { @extend .links_group1;
 	label {font-size: 12px; font-weight: bold; }}
 
-.links_group1_but { display: inline-block; font-size: 21px; padding: 8px 12px 8px 12px; margin: 0 5px -2px 5px; border: 1px  #d8def6 solid; border-bottom: 1px #fff solid; border-top-left-radius: 2px; border-top-right-radius: 2px; color: #6488D5; background-color: #fff;
+.links_group1_but { position: relative; display: inline-block; font-size: 21px; padding: 8px 12px 8px 12px; margin: 0 5px -2px 5px; border: 1px  #d8def6 solid; border-bottom: 1px #fff solid; border-top-left-radius: 2px; border-top-right-radius: 2px; color: #6488D5; background-color: #fff; z-index: 1;
 		&:hover {color: #fff; background-color: #6488D5; cursor: pointer;}
 	}
 
@@ -153,7 +159,7 @@ h2 { font-size: 17px; }
 	.links_group1_act { color: #fff; background-color: #6488D5; }
 
 
-.group1_chek1, .group1_chek2, .group1_radio1, .group1_radio2, .graphhist {display: none}
+.group1_chek1, .group1_chek2, .group1_radio1, .group1_radio2, .graphhist {display: none;}
 
 .group1_radio1:checked ~ .group1_chek1_link {color: #fff; background-color: #6488D5;}
 .group1_radio1:checked ~ .group1_chek1 {display: block;}
@@ -187,13 +193,15 @@ h2 { font-size: 17px; }
 
 .map2 { width: 100%; height: 350px;}
 
-.block1 { font-size: 13px;
+.hist_calend { position: fixed; top: 113px; left: $left_width_big; background-color: #fff; padding: 5px 8px; box-shadow: 0 0 10px #ccc; z-index: 2;}
+
+.block1 { position: fixed; width: 18%; top: 113px; right: 5px; max-height: 1000px; z-index: 1; box-shadow: 0 0 10px #ccc; padding: 0; background-color: #f8f8f8;
 	h1 {font-size: 12px; font-weight: bold; color: #fff; padding: 8px; margin: 0; background-color: #6488D5}
 	p {margin: 5px 0;}
 }
-.block1_all { font-size: 11px; padding: 3px 8px; overflow: auto; background-color: #f8f8f8;}
-.block1_sobit {@extend .block1_all; height: 210px;}
-.block1_itogi {@extend .block1_all; height: 82px;}
+.block1_all { font-size: 11px; padding: 3px 8px; overflow: auto;}
+.block1_sobit_cont {@extend .block1_all; height: 210px;}
+.block1_itogi_cont {@extend .block1_all; }
 
 
 .table_cash { @extend .table1; position: relative;
@@ -211,8 +219,9 @@ h2 { font-size: 17px; }
 
 @media (max-width: 1900px) {
 	
-	.block_br {  max-width: 25%; max-height: 350px; }
-    
+	
+	
+	
     .block_controllers {position: relative; width: 100%; padding-left: 0; left: 0; top:5px;}
     .block_tisterna {position: relative; width: 100%; left: 0; float: none; margin-top: 10px;}
     
@@ -228,8 +237,6 @@ h2 { font-size: 17px; }
 .link1but2[type="radio"]:checked ~ .link1but2_id {color: #000; border-style: none;}
 
 .tit1{display: none;}
-	
-	
 	
 	
     
@@ -254,6 +261,11 @@ h2 { font-size: 17px; }
 	
 	.hist_cont { left: $left_width}
 	
+	.hist_bottom { left:$left_width }
+	
+	.hist_calend { left: $left_width; width: 315px}
+	
+	.block1 {width: 17%}
 	
 }
 
@@ -264,11 +276,11 @@ h2 { font-size: 17px; }
     
     .tit1{display: block;}
 	
-	.block_br { right: 0; top: 22%; bottom: 41%; width: 30%; max-width: 100%; overflow: auto}
+	.block_br { right: 0; top: 25%; bottom: 41%; width: 30%; max-width: 100%; overflow: auto}
 	
 	.org_name { right: 30%; }
 	
-	.table1_cont { margin-bottom: 0; }
+	.table1_cont { margin-bottom: 0; left: $left_width_small }
     
 	.table1 {
 		li{ font-size: 11px; padding: 2px 2px}
@@ -276,7 +288,32 @@ h2 { font-size: 17px; }
 	
 	.head {opacity: 0.9;}
 	
-    .hist_cont { top: 15%;}
+    .hist_cont { top: 10%;}
+	
+	.hist_calend { left: $left_width_small; width: auto; right: 0; top: 21%}
+	
+	.block1 { display: table; top: 40%; right: 0; width: $right_width_small;}
+	
+	.block1_sobit {display: table-cell; width: 50%}
+.block1_itogi {display: table-cell; width: 50% }
+	.block1_sobit_cont { height: 90px;}
+	
+	
+
+	
+	.logo_search { width: $left_width_small; }
+	
+	.map { left: $left_width_small; }
+	
+	.org_tree { width: $left_width_small}
+	
+	.exp_all_cont {width: $left_width_small;}
+	
+	.org_name {left: $left_width_small}
+	
+	.hist_cont { left: $left_width_small}
+	
+	.hist_bottom { left:$left_width_small }
 	
 }
 
@@ -285,8 +322,10 @@ h2 { font-size: 17px; }
 
 @media (max-width: 970px) {
 	
-	.block_br {left: $left_width; width: auto; }
+	.block_br {left: $left_width_small; width: auto; }
 	.table1_cont { margin-bottom: 0; }
+	
+	
 	
 }
 
@@ -294,13 +333,17 @@ h2 { font-size: 17px; }
 
 @media (max-width: 750px) {
 	
+	
 	.table1_cont { max-height: 50%;}
 	
 	.block_br { bottom: 51%; }
 	
-	.org_name { top: 50px; left: $left_width; right: auto; }
+	.org_name { top: 50px; right: auto; }
 	
 	.hist_cont { top: 25%;}
+	
+	
+	
 	
 }
 

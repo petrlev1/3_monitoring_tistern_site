@@ -133,6 +133,8 @@
                 <div class="head"><div class="head_menu"><a href="#" class="act">ТЕКУЩИЕ ДАННЫЕ (НАВИГАЦИЯ)</a><a href="#">ИСТОРИЯ(АСКП/ЕГАИС)</a><a href="#">КЭШ АНАЛИЗАТОР</a><a href="#">ЗАВОДЫ</a><a href="#">АДМИНКА</a><a href="#">test999 [Выйти]</a></div>
                 </div>
 
+                
+
                 <div class="org_name">Организация Альб-Фрейт-Компани, № авто ав0318 07</div>
             
                 <div class="hist_cont">
@@ -143,7 +145,7 @@
                     <input type="radio" name="group1" id="group1_chek2" class="group1_radio2">
 
                     <label for="group1_chek1" style="margin-left:20px;" class="group1_chek1_link links_group1_but">АСКП</label><label for="group1_chek2" class="group1_chek2_link links_group1_but">ЕГАИС</label>
-               <div class="links_group1_line"></div>
+               
 
                 
 
@@ -207,19 +209,28 @@
 
                 <div class="group1_chek1">
 
-                <br>
-
-                <div class="margin1"><div><input type="text" class="form-control" placeholder="календарь" /></div>
-                    
+                    <div class="map" style="background-image:url(css/img/map.jpg); background-repeat:repeat"></div>
 
                 <br>
 
-                <div class="table_hist">
-                    <ul>
-                        <li class="table_hist_l"><div class="map2" style="background:url(css/img/map.jpg)"></div></li><li class="table_hist_r">
+                <div class="margin1">
+
+                    <div class="hist_calend">
+                
+                <span>с</span>
+                <span class="k-widget k-datetimepicker k-header date-time-picker start-date ng-pristine ng-untouched ng-valid k-input"><span class="k-picker-wrap k-state-default"><input type="text" class="date-time-picker start-date ng-valid k-input ng-dirty ng-valid-parse ng-touched" kendo-date-time-picker="" ng-model="StartTime" value="1" data-role="datetimepicker" role="combobox" aria-expanded="false" aria-disabled="false" aria-readonly="false"aria-activedescendant="45a130b9-5596-41b3-bd07-5615b60cd5d0_cell_selected"><span unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-calendar" role="button">select</span><span unselectable="on" class="k-icon k-i-clock" role="button">select</span></span></span></span>
+                <span>до</span>
+                <span class="k-widget k-datetimepicker k-header date-time-picker end-date ng-pristine ng-untouched ng-valid k-input"><span class="k-picker-wrap k-state-default"><input type="text" class="date-time-picker end-date ng-pristine ng-valid k-input ng-touched" kendo-date-time-picker="" ng-model="EndTime" value="1" data-role="datetimepicker" role="combobox" aria-expanded="false" aria-disabled="false" aria-readonly="false"><span unselectable="on" class="k-select"><span unselectable="on" class="k-icon k-i-calendar" role="button">select</span><span unselectable="on" class="k-icon k-i-clock" role="button">select</span></span></span></span>
+                <button class="btn" ng-click="GetHistory()">Построить</button>
+
+                    </div>
+         
                             <div class="block1">
-                                <h1>СОБЫТИЯ</h1>
+                                
+                                
                                 <div class="block1_sobit">
+                                <h1>СОБЫТИЯ</h1>
+                                <div class="block1_sobit_cont">
                                 <p><strong>Дата:</strong> 16-05-2016 08:20:42 <strong>Слив</strong> начат</p>
                                 <p><strong>Дата:</strong> 16-05-2016 08:20:42 <strong>Слив</strong> начат</p>
                                 <p><strong>Дата:</strong> 16-05-2016 08:20:42 <strong>Слив</strong> начат</p>
@@ -236,17 +247,18 @@
                                 <p><strong>Дата:</strong> 16-05-2016 08:20:42 <strong>Слив</strong> начат</p>
                                 <p><strong>Дата:</strong> 16-05-2016 08:20:42 <strong>Слив</strong> начат</p>
                                 </div>
-                            </div>
-                            <div class="block1">
+                                    </div>
+                            <div class="block1_itogi">
                                 <h1>ИТОГИ ЗА ПЕРИОД</h1>
-                                <div class="block1_itogi">
+                                <div class="block1_itogi_cont">
                                 <p>Всего - налито: 0 дал, слито: 0 дал.</p>
                                     <p>Скорость - ср: 0 км/ч, макс: 0 км/ч, пробег: км</p>
                                 </div>
                             </div>
-                         </li>
-                    </ul>
-                </div>
+                                </div>
+                     
+
+                    <div class="hist_bottom">
 
                     <input type="radio" name="group2" id="group2_chek1" class="group2_radio1" checked />
                     <input type="radio" name="group2" id="group2_chek2" class="group2_radio2">
@@ -262,13 +274,15 @@
                     <div class="links_group1_line"></div>
 
                         
-                <div class="graphhist group2_chek1">Уровень<img src="css/img/graph1.png" width="100%" /></div>
+                <div class="graphhist group2_chek1"><img src="css/img/graph1.png" width="100%" /></div>
                 
                 <div class="graphhist group2_chek2">Температура<img src="css/img/graph1.png" width="100%" /></div>
 
                         <div class="graphhist group2_chek3">Плотность<img src="css/img/graph1.png" width="100%" /></div>
 
                         <div class="graphhist group2_chek4">Скорость<img src="css/img/graph1.png" width="100%" /></div>
+
+                    </div>
 
                     </div>
                 </div>
@@ -279,6 +293,66 @@
            
         </ul>
     </div>
+
+
+
+         <script src='/Scripts/angular.js'></script>
+    
+    <script src='http://89.31.20.102:50000/Scripts/lodash.js'></script>
+    <script src='http://89.31.20.102:50000/Scripts/angular-simple-logger.js'></script>
+
+    
+    
+    <script src='http://89.31.20.102:50000/Scripts/angular-google-maps.js'></script>
+    
+    <script src="http://89.31.20.102:50000/AngularJs/Controllers/egaisController.js"></script>
+    
+
+    <script src="http://89.31.20.102:50000/AngularJs/Filters/aspnetJsonToDate.js"></script>
+    <script src="http://89.31.20.102:50000/AngularJs/Filters/toLocalDateString.js"></script>
+    <script src="http://89.31.20.102:50000/AngularJs/Filters/boolToRussianText.js"></script>
+    <script src="http://89.31.20.102:50000/AngularJs/Filters/toString.js"></script>
+
+    <script src="http://89.31.20.102:50000/AngularJs/Services/egaisViewStateService.js"></script>
+    <script src="http://89.31.20.102:50000/AngularJs/Services/controllerDataToImageService.js"></script>
+
+
+    <script src="http://89.31.20.102:50000/Scripts/jquery.cookie.js"></script>
+
+
+
+    <link rel="stylesheet" href="http://89.31.20.102:50000/Content/kendo/kendo.common.min.css" />
+    <link rel="stylesheet" href="http://89.31.20.102:50000/Content/kendo/kendo.default.min.css" />
+    <link rel="stylesheet" href="http://89.31.20.102:50000/Content/kendo/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="http://89.31.20.102:50000/Content/kendo/kendo.rtl.min.css" />
+    <link rel="stylesheet" href="http://89.31.20.102:50000/Content/kendo/kendo.material.min.css" />
+    <link rel="stylesheet" href="http://89.31.20.102:50000/Content/angular-chart/angular-chart.css"/>
+
+
+    <script src="http://89.31.20.102:50000/Content/kendo/kendo.all.min.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/cultures/kendo.culture.ru-RU.min.js"></script>
+    <script src="http://89.31.20.102:50000/Content/kendo/kendo-elements.js"></script>
+
+    <script src="http://89.31.20.102:50000/Scripts/linq-js/jquery.linq-vsdoc.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/linq-js/jquery.linq.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/linq-js/jquery.linq.min.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/linq-js/linq-vsdoc.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/linq-js/linq.js"></script>
+
+    <script src="http://89.31.20.102:50000/Content/WrapBootstrap/js/plugins/chartJs/Chart.min.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/angular-chart/angular-chart.js"></script>
+
+    <script src="http://89.31.20.102:50000/Scripts/arraySort.js"></script>
+
+    <script src="http://89.31.20.102:50000/Scripts/moment.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/moment-with-locales.js"></script>
+
+    <script src="http://89.31.20.102:50000/Scripts/date.format.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/date-extensions.js"></script>
+    <script src="http://89.31.20.102:50000/Scripts/elements-script.js"></script>
+
+
+
 </body>
 
 </html>
