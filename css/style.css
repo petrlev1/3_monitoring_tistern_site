@@ -23,15 +23,16 @@ a {
     vertical-align: top; }
 
 .all_table_l {
-  position: relative; }
+  position: relative;
+  width: 25%; }
 
 .all_table_r {
   position: relative;
-  width: 100%; }
+  width: 75%; }
 
 .logo_search {
   position: fixed;
-  width: 22%;
+  width: 25%;
   min-width: auto;
   height: 128px;
   text-align: center;
@@ -68,7 +69,7 @@ h2 {
 .map {
   position: fixed;
   width: 100%;
-  left: 22%;
+  left: 25%;
   top: 0;
   bottom: 0;
   z-index: 0; }
@@ -110,7 +111,7 @@ h2 {
   left: 0;
   bottom: 0;
   display: block;
-  width: 22%;
+  width: 25%;
   min-width: auto;
   overflow: auto;
   background-color: #fff;
@@ -134,7 +135,7 @@ h2 {
 .exp_all_cont {
   position: fixed;
   top: 124px;
-  width: 22%;
+  width: 25%;
   min-width: auto;
   height: 29px;
   padding: 5px 5px 5px 15px;
@@ -252,7 +253,7 @@ h2 {
   position: fixed;
   bottom: 0;
   right: 0;
-  left: 22%;
+  left: 25%;
   max-height: 40%;
   overflow: auto;
   box-shadow: 0 0 10px #ccc;
@@ -317,14 +318,14 @@ h2 {
   position: fixed;
   top: 5px;
   display: inline-block;
-  left: 22%;
+  left: 25%;
   font-size: 18px;
   border-right: 1px #d8def6 solid;
   margin-left: 5px;
   padding: 7px 15px;
   background-color: #fff;
   box-shadow: 2px 2px 2px #ccc;
-  z-index: 1; }
+  z-index: 2; }
 
 .block_br {
   position: fixed;
@@ -396,18 +397,13 @@ h2 {
   position: fixed;
   top: 45px;
   bottom: 0;
-  left: 22%;
+  left: 25%;
   right: 0;
   overflow: auto;
   padding-top: 20px; }
 
 .hist_bottom {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 22%;
-  max-height: 40%;
-  overflow: auto; }
+  margin-top: 15px; }
 
 .graphhist {
   overflow: auto;
@@ -416,7 +412,7 @@ h2 {
 .margin1 {
   position: relative;
   padding: 0 10px;
-  z-index: 1; }
+  overflow: auto; }
 
 .links_group1, .links_group2 {
   border-bottom: 1px #d8def6 solid; }
@@ -447,7 +443,7 @@ h2 {
   display: inline-block;
   font-size: 21px;
   padding: 8px 12px 8px 12px;
-  margin: 0 5px -2px 5px;
+  margin: 60px 5px 0 5px;
   border: 1px  #d8def6 solid;
   border-bottom: 1px #fff solid;
   border-top-left-radius: 2px;
@@ -462,7 +458,8 @@ h2 {
 
 .links_group1_but2 {
   font-size: 12px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0 5px 0 5px; }
 
 .links_group1_line {
   height: 1px;
@@ -539,28 +536,20 @@ h2 {
   width: 70%; }
 
 .map2 {
+  position: relative;
+  right: 0;
   width: 100%;
-  height: 350px; }
+  height: 400px; }
 
 .hist_calend {
-  position: fixed;
-  top: 113px;
-  left: 22%;
   background-color: #fff;
-  padding: 5px 8px;
-  box-shadow: 0 0 10px #ccc;
-  z-index: 2; }
+  padding: 5px 8px; }
 
 .block1 {
-  position: fixed;
-  width: 18%;
-  top: 113px;
-  right: 5px;
-  max-height: 1000px;
-  z-index: 1;
-  box-shadow: 0 0 10px #ccc;
+  display: table;
   padding: 0;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  width: 100%; }
   .block1 h1 {
     font-size: 12px;
     font-weight: bold;
@@ -576,8 +565,16 @@ h2 {
   padding: 3px 8px;
   overflow: auto; }
 
+.block1_sobit {
+  display: table-cell;
+  width: 50%; }
+
 .block1_sobit_cont {
-  height: 210px; }
+  height: 180px; }
+
+.block1_itogi {
+  display: table-cell;
+  width: 50%; }
 
 .table_cash {
   position: relative; }
@@ -632,6 +629,12 @@ h2 {
   .tit1 {
     display: none; } }
 @media (max-width: 1700px) {
+  .all_table_l {
+    width: 28%; }
+
+  .all_table_r {
+    width: 72%; }
+
   .table1_cont {
     left: 28%; }
 
@@ -651,18 +654,14 @@ h2 {
     left: 28%; }
 
   .hist_cont {
-    left: 28%; }
-
-  .hist_bottom {
-    left: 28%; }
-
-  .hist_calend {
-    left: 28%;
-    width: 315px; }
-
-  .block1 {
-    width: 17%; } }
+    left: 28%; } }
 @media (max-width: 1170px) {
+  .all_table_l {
+    width: 33%; }
+
+  .all_table_r {
+    width: 67%; }
+
   .tit1 {
     display: block; }
 
@@ -688,37 +687,14 @@ h2 {
   .head {
     opacity: 0.9; }
 
-  .hist_cont {
-    top: 10%; }
-
-  .hist_calend {
-    left: 33%;
-    width: auto;
-    right: 0;
-    top: 21%; }
-
-  .block1 {
-    display: table;
-    top: 40%;
-    right: 0;
-    width: 67%; }
-
-  .block1_sobit {
-    display: table-cell;
-    width: 50%; }
-
-  .block1_itogi {
-    display: table-cell;
-    width: 50%; }
-
-  .block1_sobit_cont {
-    height: 90px; }
-
   .logo_search {
     width: 33%; }
 
   .map {
     left: 33%; }
+
+  .map2 {
+    height: 200px; }
 
   .org_tree {
     width: 33%; }
@@ -730,10 +706,14 @@ h2 {
     left: 33%; }
 
   .hist_cont {
-    left: 33%; }
+    left: 33%;
+    top: 70px; }
 
-  .hist_bottom {
-    left: 33%; } }
+  .links_group1_but, .links_group1_but2 {
+    margin-top: 100px; }
+
+  .links_group1_but2 {
+    margin-top: 0; } }
 @media (max-width: 970px) {
   .block_br {
     left: 33%;
@@ -752,7 +732,10 @@ h2 {
     top: 50px;
     right: auto; }
 
-  .hist_cont {
-    top: 25%; } }
+  .links_group1_but, .links_group1_but2 {
+    margin-top: 130px; }
+
+  .links_group1_but2 {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */
