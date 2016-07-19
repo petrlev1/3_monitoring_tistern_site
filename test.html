@@ -11,38 +11,136 @@
 <script src="js/bootstrap.min.js"></script>
 
 <link href="css/style.css" rel="stylesheet" type="text/css">
-        
-        <style>
 
-            .Green {
-  background: green;
-  width: 130px;
-  height: 130px;
-  transition: .5s;
+        <style>
+            .table_cont_all {  color: #287AA7;
+  position: fixed; bottom:0;
+  padding-top: 43px;
+   background-color: #ccc;
 }
-            .chetyre {width:100px; height:100px; display:block; background-color:antiquewhite;}
-.chetyre:checked {
-  background-color:aqua;
+
+.table_cont { 
+    width: 100%; color: #287AA7; font-size: 11px; font-weight: bold; line-height: 14px; 
+  overflow-y: auto;
+  max-height: 200px;
+	background-color: #fff;
+	
 }
+table {
+  border-spacing: 0;
+  width:100%;
+}
+td + td {
+  border-left:1px solid #d8def6;
+}
+td, th {
+  border-bottom:1px solid #d8def6;
+  
+  color: #000;
+  padding: 9px 25px;
+}
+th {
+  height: 0;
+  line-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: transparent;
+  border: none;
+  white-space: nowrap;
+
+}
+th div{
+  position: absolute;
+  color: #000;
+  padding: 8px 10px;
+  top: 0;
+  margin-left: -25px;
+  line-height: normal;
+  border-left: 1px solid #d8def6;
+	
+}
+th:first-child div{
+  border: none;
+}
+
 
         </style>
+        
         
 	</head>
 
 	<body>
-        <div class="chetyre">asc</div>
-<div class="Green"></div>
-        <ul><li></li></ul>
-        <hr>
 
-        <input type="checkbox" class="chetyre"/>
-<div class="Green"></div>
-   
+        <div class="table_cont_all">
+  <div class="table_cont">
+    <table>
+      <thead>
+        <tr>
+          <th>
+            11
+            <div>11</div>
+          </th>
+          <th>
+            Value
+            <div>Value</div>
+          </th>
+          <th>
+            Description<br>reberberb
+            <div>Description<br>reberberb</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>align</td>
+          <td>left, center, right</td>
+          <td>Not supported in HTML5. Deprecated in HTML 4.01. Specifies the alignment of a table according to surrounding text</td>
+        </tr>
+        <tr>
+          <td>bgcolor</td>
+          <td>rgb(x,x,x), #xxxxxx, colorname</td>
+          <td>Not supported in HTML5. Deprecated in HTML 4.01. Specifies the background color for a table</td>
+        </tr>
+        <tr>
+          <td>border</td>
+          <td>1,""</td>
+          <td>Specifies whether the table cells should have borders or not</td>
+        </tr>
+        <tr>
+          <td>cellpadding</td>
+          <td>pixels</td>
+          <td>Not supported in HTML5. Specifies the space between the cell wall and the cell content</td>
+        </tr>
+        <tr>
+          <td>cellspacing</td>
+          <td>pixels</td>
+          <td>Not supported in HTML5. Specifies the space between cells</td>
+        </tr>
+        <tr>
+          <td>frame</td>
+          <td>void, above, below, hsides, lhs, rhs, vsides, box, border</td>
+          <td>Not supported in HTML5. Specifies which parts of the outside borders that should be visible</td>
+        </tr>
+        <tr>
+          <td>rules</td>
+          <td>none, groups, rows, cols, all</td>
+          <td>Not supported in HTML5. Specifies which parts of the inside borders that should be visible</td>
+        </tr>
+        <tr>
+          <td>summary</td>
+          <td>text</td>
+          <td>Not supported in HTML5. Specifies a summary of the content of a table</td>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>pixels, %</td>
+          <td>Not supported in HTML5. Specifies the width of a table</td>
+        </tr>
+      </tbody>
+    </table>
+ </div>
+</div>
 
-        <hr>
-
-        <input type="checkbox" id="chek1" class="checkbox1" /> оповврвкр
-   <label for="chek1" class="chek_on">erherherhre</label>
     
 </body>
 

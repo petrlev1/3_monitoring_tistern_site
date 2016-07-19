@@ -24,15 +24,15 @@ a {
 
 .all_table_l {
   position: relative;
-  width: 25%; }
+  width: 22%; }
 
 .all_table_r {
   position: relative;
-  width: 75%; }
+  width: 78%; }
 
 .logo_search {
   position: fixed;
-  width: 25%;
+  width: 22%;
   min-width: auto;
   height: 128px;
   text-align: center;
@@ -69,7 +69,7 @@ h2 {
 .map {
   position: fixed;
   width: 100%;
-  left: 25%;
+  left: 22%;
   top: 0;
   bottom: 0;
   z-index: 0; }
@@ -111,7 +111,7 @@ h2 {
   left: 0;
   bottom: 0;
   display: block;
-  width: 25%;
+  width: 22%;
   min-width: auto;
   overflow: auto;
   background-color: #fff;
@@ -135,7 +135,7 @@ h2 {
 .exp_all_cont {
   position: fixed;
   top: 124px;
-  width: 25%;
+  width: 22%;
   min-width: auto;
   height: 29px;
   padding: 5px 5px 5px 15px;
@@ -253,7 +253,7 @@ h2 {
   position: fixed;
   bottom: 0;
   right: 0;
-  left: 25%;
+  left: 22%;
   max-height: 40%;
   overflow: auto;
   box-shadow: 0 0 10px #ccc;
@@ -318,7 +318,7 @@ h2 {
   position: fixed;
   top: 5px;
   display: inline-block;
-  left: 25%;
+  left: 22%;
   font-size: 18px;
   border-right: 1px #d8def6 solid;
   margin-left: 5px;
@@ -397,7 +397,7 @@ h2 {
   position: fixed;
   top: 45px;
   bottom: 0;
-  left: 25%;
+  left: 22%;
   right: 0;
   overflow: auto;
   padding-top: 20px; }
@@ -585,6 +585,33 @@ h2 {
   width: 90%; }
 
 /* /hist */
+@media (min-width: 2250px) {
+  .all_table_l {
+    width: 16%; }
+
+  .all_table_r {
+    width: 84%; }
+
+  .table1_cont {
+    left: 16%; }
+
+  .logo_search {
+    width: 16%; }
+
+  .map {
+    left: 16%; }
+
+  .org_tree {
+    width: 16%; }
+
+  .exp_all_cont {
+    width: 16%; }
+
+  .org_name {
+    left: 16%; }
+
+  .hist_cont {
+    left: 16%; } }
 @media (max-width: 1900px) {
   .block_controllers {
     position: relative;
@@ -628,7 +655,7 @@ h2 {
 
   .tit1 {
     display: none; } }
-@media (max-width: 1700px) {
+@media (max-width: 1650px) {
   .all_table_l {
     width: 28%; }
 
@@ -655,6 +682,33 @@ h2 {
 
   .hist_cont {
     left: 28%; } }
+@media (max-width: 1300px) {
+  .all_table_l {
+    width: 33%; }
+
+  .all_table_r {
+    width: 67%; }
+
+  .table1_cont {
+    left: 33%; }
+
+  .logo_search {
+    width: 33%; }
+
+  .map {
+    left: 33%; }
+
+  .org_tree {
+    width: 33%; }
+
+  .exp_all_cont {
+    width: 33%; }
+
+  .org_name {
+    left: 33%; }
+
+  .hist_cont {
+    left: 33%; } }
 @media (max-width: 1170px) {
   .all_table_l {
     width: 33%; }

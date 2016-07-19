@@ -1,10 +1,12 @@
 $left_width: 28%;
-$left_width_big: 25%;
+$left_width_big: 22%;
+$left_width_big_big: 16%;
 $left_width_small: 33%;
 $left_width_min: auto;
 
 $right_width: 72%;
-$right_width_big: 75%;
+$right_width_big: 78%;
+$right_width_big_big: 84%;
 $right_width_small: 67%;
 
 body {margin: 0 0; padding: 0 0; font-family: Verdana, Geneva, sans-serif; color: #000; font-size: 14px; }
@@ -218,6 +220,30 @@ h2 { font-size: 17px; }
 
 
 
+@media (min-width: 2250px) {
+	
+	.all_table_l { width: $left_width_big_big}
+.all_table_r { width: $right_width_big_big}
+	
+	.table1_cont { left: $left_width_big_big}
+	
+	.logo_search { width: $left_width_big_big; }
+	
+	.map { left: $left_width_big_big; }
+	
+	.org_tree { width: $left_width_big_big}
+	
+	.exp_all_cont {width: $left_width_big_big;}
+	
+	.org_name {left: $left_width_big_big}
+	
+	.hist_cont { left: $left_width_big_big }
+
+	
+}
+
+
+
 
 @media (max-width: 1900px) {
 	
@@ -247,7 +273,7 @@ h2 { font-size: 17px; }
 
 
 
-@media (max-width: 1700px) {
+@media (max-width: 1650px) {
 	
 	.all_table_l { width: $left_width}
 .all_table_r { width: $right_width}
@@ -265,9 +291,30 @@ h2 { font-size: 17px; }
 	.org_name {left: $left_width}
 	
 	.hist_cont { left: $left_width }
+
 	
+}
+
+
+@media (max-width: 1300px) {
 	
+	.all_table_l { width: $left_width_small}
+.all_table_r { width: $right_width_small}
 	
+	.table1_cont { left: $left_width_small}
+	
+	.logo_search { width: $left_width_small; }
+	
+	.map { left: $left_width_small; }
+	
+	.org_tree { width: $left_width_small}
+	
+	.exp_all_cont {width: $left_width_small;}
+	
+	.org_name {left: $left_width_small}
+	
+	.hist_cont { left: $left_width_small }
+
 	
 }
 
