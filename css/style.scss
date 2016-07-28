@@ -194,6 +194,7 @@ h2 { font-size: 17px; }
 .table_hist_r {}
 
 .map2 { position: relative; right: 0; width: 100%; height: 400px;}
+.map2_cont { width: 100%; height: 400px;}
 
 .hist_calend { background-color: #fff; padding: 5px 8px; }
 
@@ -205,7 +206,7 @@ h2 { font-size: 17px; }
 .block1_sobit { display: table-cell; width: 50%}
 .block1_sobit_cont {@extend .block1_all; height: 180px}
 .block1_itogi { display: table-cell; width: 50% }
-.block1_itogi_cont {@extend .block1_all }
+.block1_itogi_cont {@extend .block1_all; height: 180px }
 
 
 .table_cash { @extend .table1; position: relative;
@@ -345,7 +346,8 @@ h2 { font-size: 17px; }
 	
 	.map { left: $left_width_small; }
 	
-	.map2 { height: 200px;}
+	.map2 { height: 300px;}
+	.map2_cont { height: 300px;}
 	
 	.org_tree { width: $left_width_small}
 	
