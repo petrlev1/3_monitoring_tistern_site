@@ -591,6 +591,35 @@ h2 {
 .input-group {
   width: 90%; }
 
+.table_cash2 {
+  width: 100%;
+  margin-top: 50px; }
+  .table_cash2 table {
+    font-size: 12px;
+    border-collapse: collapse;
+    width: 100%; }
+  .table_cash2 tr:hover {
+    background-color: #E6EBFF;
+    color: #000; }
+  .table_cash2 thead {
+    color: #287AA7;
+    font-size: 11px;
+    font-weight: bold;
+    background: linear-gradient(white, #e6ebff); }
+    .table_cash2 thead:hover {
+      color: #287AA7; }
+  .table_cash2 th, .table_cash2 td {
+    border: 1px #d8def6 solid;
+    text-align: left;
+    padding: 8px 10px; }
+
+.fixed {
+  top: 50px;
+  position: fixed;
+  width: auto;
+  display: none;
+  border: none; }
+
 /* /hist */
 @media (min-width: 2250px) {
   .all_table_l {
