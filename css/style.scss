@@ -239,9 +239,12 @@ th,td{ border:1px #d8def6 solid;
   text-align:left;
   padding: 8px 10px;
 }
+	
+	td {display: none}
 }
 
-
+.off {@extend .table_cash2;
+	td{display:table-cell}}
 
 /* /hist */
 
