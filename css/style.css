@@ -613,13 +613,6 @@ h2 {
     text-align: left;
     padding: 8px 10px; }
 
-.fixed {
-  top: 50px;
-  position: fixed;
-  width: auto;
-  display: none;
-  border: none; }
-
 /* /hist */
 @media (min-width: 2250px) {
   .all_table_l {
