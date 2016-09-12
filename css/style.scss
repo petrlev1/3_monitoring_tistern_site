@@ -18,7 +18,7 @@ a{color: #6488D5; text-decoration: none; border-style: none;
     ul{display:table-row}
     li{display:table-cell; vertical-align: top; }}
 .all_table_l { position: relative; width: $left_width_big }
-.all_table_r {position: relative; width:$right_width_big;}
+.all_table_r {position: relative; width:$right_width_big }
 
 .logo_search {position: fixed; width: $left_width_big; min-width: $left_width_min; height: 128px; text-align: center; background: linear-gradient(to top, #F5F6F7, #fff); border-bottom: 1px #d8def6 solid; z-index: 2;}
 
@@ -33,7 +33,7 @@ h2 { font-size: 17px; }
 
 .error { color: red;}
 
-.map { position: fixed; width: 100%; left: $left_width_big; top: 0; bottom: 0; z-index: 0;}
+.map { position: fixed; right: 0; left: $left_width_big; top: 0; bottom: 0; z-index: 0; }
 
 .head {position: fixed; top: 0; right: 0;  z-index: 2; opacity: 0.7;
 	&:hover{opacity: 1;}}
